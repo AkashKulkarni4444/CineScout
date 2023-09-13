@@ -25,6 +25,9 @@ const HeroBanner = () => {
     if (event.key === "Enter" && query.length > 0) {
       navigate(`/search/${query}`);
     }
+    if (query.length>0) {
+      navigate(`/search/${query}`);
+    }
   };
   return (
     <div className="heroBanner">
