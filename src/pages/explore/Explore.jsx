@@ -60,7 +60,6 @@ const Explore = () => {
       }
     );
   };
-  console.log(data);
   useEffect(() => {
     filters = {};
     setData(null);

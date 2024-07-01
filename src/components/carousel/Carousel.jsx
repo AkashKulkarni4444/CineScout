@@ -13,6 +13,7 @@ import CircleRating from "../circleRating/CircleRating";
 import Genres from "../genres/Genres";
 import "./style.scss";
 const Carousel = ({ data, loading, endpoint }) => {
+
   const carouselContainer = useRef();
   const { url } = useSelector((state) => state.home);
   const navigate = useNavigate();
@@ -72,8 +73,8 @@ const Carousel = ({ data, loading, endpoint }) => {
                   </div>
                   <div className="textBlock">
                     <span className="title">{item.title || item.name}</span>
-                    <span className="data">
-                      {dayjs(item.release_Date).format("MMM D, YYYY")}
+                    <span className="date">
+                      {dayjs(item.release_date).format("MMM D, YYYY")}
                     </span>
                   </div>
                 </div>
